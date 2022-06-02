@@ -1,0 +1,19 @@
+apiVersion: tekton.dev/v1alpha1
+kind: PipelineRun
+metadata:
+  generateName: nova-api-run-
+spec:
+  serviceAccountName: build-bot-test
+  pipelineRef:
+    name: maven-build
+  resources:
+    - name: app-git
+      resourceSpec:
+        type: git
+        params:
+          - name: url
+            value: https://github.com/ssrivastava1987/employee_crud.git
+  workspaces:
+    - name: local-maven-repo
+      persistentVolumeClaim:
+        claimName: maven-repo-pvc
