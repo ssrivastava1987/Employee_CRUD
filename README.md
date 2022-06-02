@@ -2,7 +2,7 @@
 
 ## Steps
 #### Checkout
-git checkout https://github.com/ssrivastava1987/Employee_CRUD.git
+git clone https://github.com/ssrivastava1987/Employee_CRUD.git
 
 cd devnech
 
