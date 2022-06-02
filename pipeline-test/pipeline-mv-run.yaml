@@ -1,7 +1,7 @@
 apiVersion: tekton.dev/v1alpha1
 kind: PipelineRun
 metadata:
-  generateName: nova-api-run-
+  generateName: employee-crud-run-
 spec:
   serviceAccountName: build-bot-test
   pipelineRef:
