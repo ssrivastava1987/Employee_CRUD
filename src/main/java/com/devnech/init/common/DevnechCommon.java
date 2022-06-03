@@ -41,6 +41,5 @@ public class DevnechCommon {
         emp.setModifiedDate(new Date());
 
         return emp;
-
     }
 }
